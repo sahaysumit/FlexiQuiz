@@ -1,0 +1,25 @@
+html
+	head
+		title Download File on Click
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css")
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+	body
+		.row
+			.col-xs-12
+				.form-group.text-center
+					h4 Click to download file
+					button.btn.btn-primary Download
+
+
+
+
+		script.
+			$("button").on('click', ()=>{
+				$.get('/download', (data)=>{
+					var blob=new Blob([data]);
+					var link=document.createElement('a');
+					link.href=window.URL.createObjectURL(blob);
+					link.download="response-json.txt";
+					link.click();
+				})
+			});

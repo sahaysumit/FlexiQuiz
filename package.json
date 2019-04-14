@@ -1,0 +1,26 @@
+{
+  "name": "flexiquiz",
+  "version": "1.0.0",
+  "description": "Full_Stack_Developer",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahaysumit/FlexiQuiz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sahaysumit/FlexiQuiz/issues"
+  },
+  "homepage": "https://github.com/sahaysumit/FlexiQuiz#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "http": "0.0.0"
+  },
+  "devDependencies": {
+    "jade": "^1.11.0"
+  }
+}
